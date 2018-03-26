@@ -29,6 +29,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api/user', auth.authenticate(), function (req, res) {
+  console.log(auth.authenticate());
   res.json({
     data: users[req.user.id]
   });
