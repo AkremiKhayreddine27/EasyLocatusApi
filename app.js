@@ -129,7 +129,7 @@ app.delete('/api/auth/logout', function (req, res) {
   });
 });
 
-app.listen(4400, function () {
+app.listen(process.env.PORT || 4400, function () {
   console.log('ngx-admin sample API is running on 4400');
 });
 
