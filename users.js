@@ -9,7 +9,7 @@ const users = [
     id: 1,
     firstName: 'John',
     lastName: 'Doe',
-    email: 'example@easylocatus.com',
+    email: 'dev@dev.com',
     password: '123456',
     birthDay: new Date(),
     phone: '0021625268368'

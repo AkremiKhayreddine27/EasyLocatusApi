@@ -3,7 +3,6 @@
  * Copyright Akveo. All Rights Reserved.
  * Licensed under the MIT License. See License.txt in the project root for license information.
  */
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jwt-simple');
@@ -28,7 +27,8 @@ app.get('/', function (req, res) {
   });
 });
 
-app.get('/api/user', auth.authenticate(), function (req, res) {
+app.get('/api/user', function (req, res) {
+  console.log(req.user);
   res.json({
     data: users[req.user.id]
   });
