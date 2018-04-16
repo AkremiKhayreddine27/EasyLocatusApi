@@ -753,8 +753,8 @@ const properties = [
       reservations: [
         {
           status: 'réservé',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'payé',
           amount: 500,
           lodger: {
@@ -860,8 +860,8 @@ const properties = [
         },
         {
           status: 'provisoire',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'non payé',
           amount: 800,
           lodger: {
@@ -967,8 +967,8 @@ const properties = [
         },
         {
           status: 'annulé',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'payé',
           amount: 1500,
           lodger: {
@@ -1044,8 +1044,8 @@ const properties = [
         },
         {
           status: 'provisoire',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'non payé',
           amount: 5500,
           lodger: {
@@ -1121,8 +1121,8 @@ const properties = [
         },
         {
           status: 'réservé',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'non payé',
           amount: 600,
           lodger: {
@@ -1198,8 +1198,8 @@ const properties = [
         },
         {
           status: 'annulé',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'payé',
           amount: 500,
           lodger: {
@@ -1275,8 +1275,8 @@ const properties = [
         },
         {
           status: 'annulé',
-          startDate: dateFns.addDays(new Date(), 1),
-          endDate: dateFns.addDays(new Date(), 3),
+          startDate: new Date(),
+          endDate: new Date(),
           paymentStatus: 'payé',
           amount: 300,
           lodger: {
