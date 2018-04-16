@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const jwt = require('jwt-simple');
 const auth = require('./auth.js')();
 const users = require('./users.js');
+const properties = require('./properties');
 const cfg = require('./config.js');
 const app = express();
 
@@ -28,7 +29,6 @@ app.get('/', function (req, res) {
 });
 
 app.get('/api/user', function (req, res) {
-  console.log(req.user);
   res.json({
     data: users[req.user.id]
   });
@@ -117,6 +117,12 @@ app.put('/api/auth/reset-pass', function (req, res) {
     data: {
       error: 'Token is not correct.'
     }
+  });
+});
+
+app.get('/api/properties', function (req, res) {
+  res.json({
+    data: properties
   });
 });
 
